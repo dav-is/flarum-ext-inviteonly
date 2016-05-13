@@ -143,7 +143,7 @@ System.register('Davis/InviteOnly/main', ['flarum/extend', 'flarum/app', 'flarum
             });
           }
           items.add('invite', FieldSet.component({
-            label: app.translator.trans('davis.inviteonly.forum.edit.title'),
+            label: app.translator.trans('davis-inviteonly.forum.edit.title'),
             className: 'Settings-invite',
             children: [m('table', { className: "NotificationGrid" }, [m('thead', [m('tr', [m('td', [app.translator.trans('davis-inviteonly.forum.edit.key')]), m('td', [app.translator.trans('davis-inviteonly.forum.edit.used')]), m('td', [app.translator.trans('davis-inviteonly.forum.edit.used_by')]), m('td')])]), m('tbody', [this.flatcodes !== undefined ? this.flatcodes.map(function (code) {
               return [m('tr', [m('td', [code['token']]), m('td', [code['used']]), m('td', [m('a', { href: app.forum.attribute('baseUrl') + '/u/' + code['used_by'] }, [code['used_by']])]), m('td', [m('a', { onclick: function onclick() {

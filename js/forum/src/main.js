@@ -124,7 +124,7 @@ app.initializers.add('davis-inviteonly', () => {
   }
   items.add('invite',
       FieldSet.component({
-        label: app.translator.trans('davis.inviteonly.forum.edit.title'),
+        label: app.translator.trans('davis-inviteonly.forum.edit.title'),
         className: 'Settings-invite',
         children: [
           m('table', {className: "NotificationGrid"}, [m('thead', [m('tr', [m('td',[app.translator.trans('davis-inviteonly.forum.edit.key')]),m('td',[app.translator.trans('davis-inviteonly.forum.edit.used')]),m('td',[app.translator.trans('davis-inviteonly.forum.edit.used_by')]),m('td')])]),m('tbody',[
